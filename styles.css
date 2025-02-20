@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #cce5ff;
+    color: #002b5e;
+    padding: 5px 10px; 
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+    color: #002b5e;
+}
+
+main {
+    padding: 20px;
+}
+
+/* ✅ Ensure inputs stay left-aligned and well-spaced */
+.inputs {
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.inputs label {
+    display: block;
+    margin-top: 3px;
+}
+
+.inputs input {
+    width: 100%;
+    margin-top: 2px;
+}
+
+/* ✅ Footer now stays below the graph and does not overlap */
+footer {
+    background-color: #004080;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.2em;
+    min-height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; /* ✅ Keeps distance from chart */
+}
+
+footer .summary {
+    display: block;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* ✅ Properly scaled chart */
+.chart-container {
+    width: 90%;  /* ✅ Prevents overflow */
+    max-width: 900px; /* ✅ Limits the size */
+    height: auto;
+    margin-bottom: 30px; /* ✅ Adds space between chart and footer */
+}
+
+/* ✅ Properly scale chart */
+#balance-chart {
+    width: 100%;  /* ✅ Make sure it scales properly */
+    max-width: 900px;  /* ✅ Prevent excessive width */
+    height: 500px;  /* ✅ Reasonable height */
+    display: block;
+    margin-left: 0;
+}
+
+/* ✅ Keep chart and input fields aligned */
+.graphs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
